@@ -15,20 +15,20 @@ namespace Fantasy_Farm
     class Player : NPC
     {
         public Player(ContentManager Content)
-            : base(Content.Load<Texture2D>("player"))
+            : base(Content.Load<Texture2D>("fergal_spritesheet"))
         {
             crop = new Rectangle(0, 0, 120, 100);
-            origin = Vector2.Zero;
+            origin = new Vector2(0,32);
 
-            animWalkN = MakeAnimSequence(120, new int[] {00});
-            animWalkS = MakeAnimSequence(120, new int[] {01});
-            animWalkW = MakeAnimSequence(120, new int[] {02});
-            animWalkE = MakeAnimSequence(120, new int[] {03});
+            animWalkN = MakeAnimSequence(64, 96, new int[] { 06, 07, 06, 08 });
+            animWalkS = MakeAnimSequence(64, 96, new int[] { 00, 01, 00, 02 });
+            animWalkW = MakeAnimSequence(64, 96, new int[] { 03, 04, 03, 05 });
+            animWalkE = MakeAnimSequence(64, 96, new int[] { 03, 04, 03, 05 });
 
-            animIdleN = MakeAnimSequence(120, new int[] {00});
-            animIdleS = MakeAnimSequence(120, new int[] {01});
-            animIdleW = MakeAnimSequence(120, new int[] {02});
-            animIdleE = MakeAnimSequence(120, new int[] {03});
+            animIdleN = MakeAnimSequence(64, 96, new int[] { 06 });
+            animIdleS = MakeAnimSequence(64, 96, new int[] { 00 });
+            animIdleW = MakeAnimSequence(64, 96, new int[] { 03 });
+            animIdleE = MakeAnimSequence(64, 96, new int[] { 03 });
         }
     }
 }

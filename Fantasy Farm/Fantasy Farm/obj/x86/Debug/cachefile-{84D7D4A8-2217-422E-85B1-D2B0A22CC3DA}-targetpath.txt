@@ -5,3 +5,4 @@ Content\player.xnb
 Content\quit.xnb
 Content\screens.xnb
 Content\title.xnb
+Content\terrain.xnb

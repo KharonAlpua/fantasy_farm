@@ -53,10 +53,10 @@ namespace Fantasy_Farm
         {
             if (npcState == NPCState.Walk)
             {
-                if (position.X < target.X) position.X += 10;
-                if (position.X > target.X) position.X -= 10;
-                if (position.Y < target.Y) position.Y += 10;
-                if (position.Y > target.Y) position.Y -= 10;
+                if (position.X < target.X) position.X += 8;
+                if (position.X > target.X) position.X -= 8;
+                if (position.Y < target.Y) position.Y += 8;
+                if (position.Y > target.Y) position.Y -= 8;
 
                 if (position == target) npcState = NPCState.Idle;
             }
@@ -84,7 +84,7 @@ namespace Fantasy_Farm
 
         public void UpdateTarget()
         {
-            target = new Vector2(gridX, gridY) * 120;
+            target = new Vector2(gridX, gridY) * 64;
         }
         public void Move(GSPlay play, Direction moveDir)
         {

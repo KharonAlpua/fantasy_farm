@@ -11,3 +11,4 @@ C:\Users\Kharon\Desktop\Dropbox\Ferris\DAGD 255\Midterm\fantasy_farm\Fantasy Far
 C:\Users\Kharon\Desktop\Dropbox\Ferris\DAGD 255\Midterm\fantasy_farm\Fantasy Farm\Fantasy Farm\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Kharon\Desktop\Dropbox\Ferris\DAGD 255\Midterm\fantasy_farm\Fantasy Farm\Fantasy Farm\obj\x86\Debug\Fantasy Farm.exe
 C:\Users\Kharon\Desktop\Dropbox\Ferris\DAGD 255\Midterm\fantasy_farm\Fantasy Farm\Fantasy Farm\obj\x86\Debug\Fantasy Farm.pdb
+C:\Users\Kharon\Desktop\Dropbox\Ferris\DAGD 255\Midterm\fantasy_farm\Fantasy Farm\Fantasy Farm\bin\x86\Debug\Content\terrain.xnb

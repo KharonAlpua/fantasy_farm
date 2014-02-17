@@ -25,7 +25,7 @@ namespace Fantasy_Farm
         {
 
             
-            map = new Map(Content.Load<Texture2D>("ground"), 120);
+            map = new Map(Content.Load<Texture2D>("terrain"), 64);
             map.SetTiles(new int[,]{
                           {0,0,0,0,0,0,0,0,0,0},
                           {0,1,1,1,1,1,1,1,1,0},
