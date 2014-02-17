@@ -19,10 +19,15 @@ namespace Fantasy_Farm
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        Sprite screens;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            graphics.PreferredBackBufferWidth = 1280;
+            graphics.PreferredBackBufferHeight = 720;
+            graphics.ApplyChanges();
         }
 
         /// <summary>
@@ -48,6 +53,9 @@ namespace Fantasy_Farm
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            GameStateManager.Services = this.Services;
+            GameStateManager.SwitchToPlay();
+            screens = new Sprite(Content.Load<Texture2D>("screens"), new Vector2(800, 480));
         }
 
         /// <summary>
@@ -71,6 +79,7 @@ namespace Fantasy_Farm
                 this.Exit();
 
             // TODO: Add your update logic here
+            GameStateManager.Update(gameTime);
 
             base.Update(gameTime);
         }
@@ -81,8 +90,12 @@ namespace Fantasy_Farm
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Black);
+            GameStateManager.Draw(spriteBatch);
 
+            spriteBatch.Begin();
+            screens.Draw(spriteBatch);
+            spriteBatch.End();
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);

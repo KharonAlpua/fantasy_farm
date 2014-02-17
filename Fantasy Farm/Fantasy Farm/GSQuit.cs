@@ -1,0 +1,51 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.GamerServices;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
+
+namespace Fantasy_Farm
+{
+    class GSQuit : GameState
+    {
+        Sprite quit;
+        public GSQuit()
+            : base()
+        {
+            Texture2D img = Content.Load<Texture2D>("quit");
+            quit = new Sprite(img, new Vector2(800, 480));
+        }
+        public override void Update(GameTime gameTime)
+        {
+
+            UpdateKeyboardState();
+
+            if (OnPress(Keys.F1))
+            {//go to play state
+                GameStateManager.SwitchToTitle();
+            }
+            if (OnPress(Keys.F2))
+            {//go to pause state
+                GameStateManager.SwitchToPlay();
+            }
+            if (OnPress(Keys.F3))
+            {//go to title state
+                GameStateManager.SwitchToPause();
+            }
+            base.Update(gameTime);
+
+        }
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+            spriteBatch.Begin();
+            quit.Draw(spriteBatch);
+            spriteBatch.End();
+        }
+    }
+}

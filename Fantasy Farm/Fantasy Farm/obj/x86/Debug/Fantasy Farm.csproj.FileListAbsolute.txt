@@ -1,0 +1,13 @@
+C:\Users\Kharon\Desktop\Dropbox\Ferris\DAGD 255\Midterm\fantasy_farm\Fantasy Farm\Fantasy Farm\bin\x86\Debug\Content\fergal_spritesheet.xnb
+C:\Users\Kharon\Desktop\Dropbox\Ferris\DAGD 255\Midterm\fantasy_farm\Fantasy Farm\Fantasy Farm\bin\x86\Debug\Content\ground.xnb
+C:\Users\Kharon\Desktop\Dropbox\Ferris\DAGD 255\Midterm\fantasy_farm\Fantasy Farm\Fantasy Farm\bin\x86\Debug\Content\pause.xnb
+C:\Users\Kharon\Desktop\Dropbox\Ferris\DAGD 255\Midterm\fantasy_farm\Fantasy Farm\Fantasy Farm\bin\x86\Debug\Content\player.xnb
+C:\Users\Kharon\Desktop\Dropbox\Ferris\DAGD 255\Midterm\fantasy_farm\Fantasy Farm\Fantasy Farm\bin\x86\Debug\Content\quit.xnb
+C:\Users\Kharon\Desktop\Dropbox\Ferris\DAGD 255\Midterm\fantasy_farm\Fantasy Farm\Fantasy Farm\bin\x86\Debug\Content\screens.xnb
+C:\Users\Kharon\Desktop\Dropbox\Ferris\DAGD 255\Midterm\fantasy_farm\Fantasy Farm\Fantasy Farm\bin\x86\Debug\Content\title.xnb
+C:\Users\Kharon\Desktop\Dropbox\Ferris\DAGD 255\Midterm\fantasy_farm\Fantasy Farm\Fantasy Farm\bin\x86\Debug\Fantasy Farm.exe
+C:\Users\Kharon\Desktop\Dropbox\Ferris\DAGD 255\Midterm\fantasy_farm\Fantasy Farm\Fantasy Farm\bin\x86\Debug\Fantasy Farm.pdb
+C:\Users\Kharon\Desktop\Dropbox\Ferris\DAGD 255\Midterm\fantasy_farm\Fantasy Farm\Fantasy Farm\obj\x86\Debug\Fantasy Farm.csprojResolveAssemblyReference.cache
+C:\Users\Kharon\Desktop\Dropbox\Ferris\DAGD 255\Midterm\fantasy_farm\Fantasy Farm\Fantasy Farm\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Kharon\Desktop\Dropbox\Ferris\DAGD 255\Midterm\fantasy_farm\Fantasy Farm\Fantasy Farm\obj\x86\Debug\Fantasy Farm.exe
+C:\Users\Kharon\Desktop\Dropbox\Ferris\DAGD 255\Midterm\fantasy_farm\Fantasy Farm\Fantasy Farm\obj\x86\Debug\Fantasy Farm.pdb

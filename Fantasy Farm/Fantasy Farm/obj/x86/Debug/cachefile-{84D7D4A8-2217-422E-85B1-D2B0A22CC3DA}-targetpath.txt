@@ -1,0 +1,7 @@
+Content\fergal_spritesheet.xnb
+Content\ground.xnb
+Content\pause.xnb
+Content\player.xnb
+Content\quit.xnb
+Content\screens.xnb
+Content\title.xnb
