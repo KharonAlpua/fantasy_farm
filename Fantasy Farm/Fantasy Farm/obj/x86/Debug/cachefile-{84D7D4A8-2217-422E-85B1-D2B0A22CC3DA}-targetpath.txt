@@ -1,8 +1,10 @@
-Content\fergal_spritesheet.xnb
 Content\ground.xnb
 Content\pause.xnb
 Content\player.xnb
 Content\quit.xnb
 Content\screens.xnb
 Content\title.xnb
+Content\fergal_spritesheet.xnb
 Content\terrain.xnb
+Content\ramon_spritesheet.xnb
+Content\crops.xnb

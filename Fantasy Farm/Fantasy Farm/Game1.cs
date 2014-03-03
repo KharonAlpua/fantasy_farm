@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
@@ -11,6 +14,15 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Fantasy_Farm
 {
+    enum PlayerTool
+    {
+        None,
+        Axe,
+        Water,
+        Hammer,
+        Hoe,
+        SeedBag
+    }
     /// <summary>
     /// This is the main type for your game
     /// </summary>
@@ -39,8 +51,55 @@ namespace Fantasy_Farm
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            // SaveGame("test.ffarm");
+            LoadGame("test.ffarm");
 
             base.Initialize();
+        }
+
+        public void SaveGame(string fileName)
+        {
+            SaveData savedata = new SaveData();
+            Stream stream = null;
+
+            try { stream = File.OpenWrite(fileName); }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e.Message);
+                return;
+            }
+            BinaryFormatter bf = new BinaryFormatter();
+            try { bf.Serialize(stream, savedata); }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e.Message);
+                stream.Close();
+                return;
+            }
+
+            if (stream != null) { stream.Close(); }
+        }
+
+        public void LoadGame(string fileName)
+        {
+            Stream stream = null;
+            BinaryFormatter bf = new BinaryFormatter();
+
+            try { stream = File.OpenWrite(fileName); }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e.Message);
+                return;
+            }
+
+            try { SaveData savedata = (SaveData)bf.Deserialize(stream); }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e.Message);
+                stream.Close();
+                return;
+            }
+
         }
 
         /// <summary>
